@@ -63,7 +63,7 @@ SERVICE_CIDR="10.68.0.0/16"
 CLUSTER_CIDR="172.20.0.0/16"
 
 # 服务端口范围 (NodePort Range)
-NODE_PORT_RANGE="20000-40000"
+NODE_PORT_RANGE="1-65535"
 
 # kubernetes 服务 IP (预分配，一般是 SERVICE_CIDR 中第一个IP)
 CLUSTER_KUBERNETES_SVC_IP="10.68.0.1"
@@ -84,11 +84,11 @@ ETCD_ENDPOINTS="{{ TMP_ENDPOINTS.rstrip(',') }}"
 
 # 集群basic auth 使用的用户名和密码
 BASIC_AUTH_USER="admin"
-BASIC_AUTH_PASS="test1234"
+BASIC_AUTH_PASS="admin888"
 
 # ---------附加参数--------------------
 #默认二进制文件目录
-bin_dir="/opt/kube/bin"
+bin_dir="/usr/bin"
 
 #证书目录
 ca_dir="/etc/kubernetes/ssl"
