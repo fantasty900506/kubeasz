@@ -1,10 +1,20 @@
-{
-  "registry-mirrors": ["https://kuamavit.mirror.aliyuncs.com", "https://registry.docker-cn.com", "https://docker.mirrors.ustc.edu.cn"], 
+{  
+	"debug": true,
+	"pidfile": "/data/docker/docker.pid",
+	"data-root": "/data/docker/", 
+	"storage-driver": "overlay2", 
+	"labels": ["region=sz","hostnetwork=192.168.176.0/22"],
+	"dns": ["1.1.1.1","8.8.8.8","114.114.114.114","192.168.149.42","192.168.16.159"],
+  "live-restore": true, 
+	"default-ulimit": ["nofile=1048576:1048576","nproc=4034660"],	 
+	"hosts": ["tcp://0.0.0.0:2375","unix:///var/run/docker.sock"], 	 
+	"registry-mirrors": ["https://registry.docker-cn.com","https://2idew9sd.mirror.aliyuncs.com","https://mirror.ccs.tencentyun.com"],
+  "insecure-registries": ["192.168.176.2:81","192.168.148.138:81","192.168.177.1:81"],
   "max-concurrent-downloads": 10,
   "log-driver": "json-file",
   "log-level": "warn",
   "log-opts": {
     "max-size": "10m",
     "max-file": "3"
-    }
+    } 	
 }
