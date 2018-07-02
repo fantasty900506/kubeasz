@@ -83,6 +83,9 @@
     - "/etc/systemd/system/docker.service"
     - "/etc/systemd/system/docker.service.requires/"
     - "/opt/kube/kube-system/"
+  
+  - name: 清理 ipvs规则
+    shell: " ipset destroy  && ipvsadm --clear"
 
   - name: 清理 iptables
     shell: "iptables -F && iptables -X \
