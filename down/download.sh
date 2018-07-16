@@ -1,12 +1,13 @@
 #!/bin/bash
 #主要组件版本如下
-export K8S_VER=v1.11
+
+export K8S_VER=v1.11.0
 export ETCD_VER=v3.3.8
 export DOCKER_VER=18.03.1-ce
 export CNI_VER=v0.7.1
-export DOCKER_COMPOSE=1.21.1
-export HARBOR=v1.5.0
-
+export DOCKER_COMPOSE=1.21.2
+export HARBOR=v1.5.1
+ 
 echo "\n建议直接下载本人打包好的所有必要二进制包k8s-***.all.tar.gz，然后解压到bin目录"
 echo "\n建议不使用此脚本，如果你想升级组件或者实验，请通读该脚本，必要时适当修改后使用"
 echo "\n注意1：请按照以下链接手动下载二进制包到down目录中"
