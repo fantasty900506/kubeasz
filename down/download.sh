@@ -1,11 +1,11 @@
 #!/bin/bash
 #主要组件版本如下
 
-export K8S_VER=v1.11.0
+export K8S_VER=v1.11.1
 export ETCD_VER=v3.3.8
-export DOCKER_VER=18.03.1-ce
+export DOCKER_VER=18.06.0-ce
 export CNI_VER=v0.7.1
-export DOCKER_COMPOSE=1.21.2
+export DOCKER_COMPOSE=1.22.0
 export HARBOR=v1.5.1
  
 echo "\n建议直接下载本人打包好的所有必要二进制包k8s-***.all.tar.gz，然后解压到bin目录"
@@ -71,7 +71,7 @@ fi
 echo "\n准备kubernetes二进制程序..."
 if [ -f "kubernetes-server-linux-amd64.tar.gz" ]; then
   echo "\nextracting kubernetes binaries..."
-  tar zxf kubernetes-server-linux-amd64.tar.gz
+  tar zxf kubernetes-server-linux-amd64*.tar.gz
   mv -f kubernetes/server/bin/kube-apiserver ../bin
   mv -f kubernetes/server/bin/kube-controller-manager ../bin
   mv -f kubernetes/server/bin/kubectl ../bin
