@@ -84,7 +84,11 @@
     - "/run/flannel/"
     - "/etc/calico/"
     - "/var/run/calico/"
+    - "/var/lib/calico/"
     - "/var/log/calico/"
+    - "/etc/cilium/"
+    - "/var/run/cilium/"
+    - "/sys/fs/bpf/tc/"
     - "/var/lib/cni/"
     - "/var/lib/docker/"
     - "/var/lib/kube-router/"
@@ -116,6 +120,8 @@
 	ip link del kube-bridge; \
         ip link del dummy0; \
         ip link del kube-ipvs0; \
+        ip link del cilium_net; \
+        ip link del cilium_vxlan; \
 	systemctl restart networking; \
 	systemctl restart network"
     ignore_errors: true
