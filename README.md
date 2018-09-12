@@ -12,19 +12,14 @@
 
 |组件|更新|支持|
 |:-|:-|:-|
-|OS|&nbsp;|Ubuntu 16.04+, CentOS 7|
-<<<<<<< HEAD
-<<<<<<< HEAD
-|k8s|v1.11|v1.8, v1.9, v1.10|
-|etcd|v3.3.8|v3.1, v3.2, v3.3|
-=======
+|OS|&nbsp;|Ubuntu 16.04+, CentOS 7| 
+ 
 |k8s|v1.11.0|v1.8,v1.9,v1.10,v1.11|
 |etcd|v3.3.8|v3.1,v3.2,v3.3|
->>>>>>> kube/master
-=======
+ kube/master
+ 
 |k8s|v1.11.2|v1.8, v1.9, v1.10, v1.11|
-|etcd|v3.3.8|v3.1, v3.2, v3.3|
->>>>>>> kube/master
+|etcd|v3.3.8|v3.1, v3.2, v3.3| 
 |docker|18.03.1-ce|17.*.*-ce, 18.*.*-ce|
 |network|&nbsp;|calico, cilium, flannel, kube-router|
 
