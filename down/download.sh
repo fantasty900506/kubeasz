@@ -1,12 +1,12 @@
 #!/bin/bash
 #主要组件版本如下
 
-export K8S_VER=v1.11.1
-export ETCD_VER=v3.3.8
-export DOCKER_VER=18.06.0-ce
+export K8S_VER=v1.11.3
+export ETCD_VER=v3.3.9
+export DOCKER_VER=18.06.1-ce
 export CNI_VER=v0.7.1
 export DOCKER_COMPOSE=1.22.0
-export HARBOR=v1.5.1
+export HARBOR=v1.6.0
  
 echo "\n建议直接下载本人打包好的所有必要二进制包k8s-***.all.tar.gz，然后解压到bin目录"
 echo "\n建议不使用此脚本，如果你想升级组件或者实验，请通读该脚本，必要时适当修改后使用"
@@ -17,8 +17,7 @@ echo "\n----download k8s binary at:"
 echo https://dl.k8s.io/${K8S_VER}/kubernetes-server-linux-amd64.tar.gz
 
 echo "\n----download etcd binary at:"
-echo https://github.com/coreos/etcd/releases/download/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz
-echo https://storage.googleapis.com/etcd/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz
+echo https://github.com/etcd-io/etcd/releases/download/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz   
 
 echo "\n----download docker binary at:"
 echo https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VER}.tgz
